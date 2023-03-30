@@ -4,7 +4,7 @@ var generateBtn = document.querySelector("#generate");
 var upperCaseList = "ABCDEFGHIJKLMNOPQRSTUVWXYZ"
 var lowerCaseList = "abcdefghijklmnopqrstuvwxyz"
 var numberList = "123456789"
-var specialCharacterList = "!@#$%&*"
+var specialCharacterList = "!#$%&()*+,-./:;<=>?@[\]^_`{|}~"
 
 // function that creates password based on user selections
 
@@ -21,7 +21,7 @@ for(var i=0; i < pLength; i++){
 
     // charAt selects a value from the string given a random number by the internal/local Math functions
     // passwordMax contains the passwordSelected to the max length stablish by the user
-    
+
     passwordSelected += lowerCaseList.charAt(Math.floor(Math.random() * lowerCaseList.length));
     passwordMAx += 1
   }
